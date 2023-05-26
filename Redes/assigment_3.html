@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Assigment 3</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<!-- Note: The "styleN" class below should match that of the banner element. -->
+					<header id="header" class="alt style2">
+						<a href="index.html" class="logo"><strong>Main Page</strong> <span>Gaby</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="landing.html">About</a></li>
+							<li><a href="generic.html">Random</a></li>
+							<li><a href="elements.html">Elements</a></li>
+						</ul>
+						<ul class="actions stacked">
+							<li><a href="#" class="button primary fit">Get Started</a></li>
+						</ul>
+					</nav>
+
+				<!-- Banner -->
+				<!-- Note: The "styleN" class below should match that of the header element. -->
+					<section id="banner" class="style2">
+						<div class="inner">
+							<span class="image">
+								<img src="images/pic07.jpg" alt="" />
+							</span>
+							<header class="major">
+								<h1>Assigment 3</h1>
+							</header>
+							<div class="content">
+								<p>- Read the following article http://martinfowler.com/articles/microservices.html and explain what "Microservices Architecture" means. <br>
+								- Install aws cli in your Mac or Linux computer and setup the config and credentials files.<br>
+								- Install python and boto3 in your Mac or Linux computer. <br>
+								- Explain how you can have more than one access key in your computer and how to use each one. Provide code or configuration examples. <br>
+								- Explain what S3 is, how it works and how you can use it to deploy a static website. <br>
+								- Explain what CloudFront is, how it works and how you can use it to deploy a static website. <br>
+								- Explain what an API is.<br>
+								- Explain what a Restful API is.<br>
+								- Explain what you are going to do different this semester based on last semester experience.</p>
+							</div>
+						</div>
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h2>Answers</h2>
+										<h2><a href="https://github.com/Gaby1470/CloudComputing/blob/main/Assigment_3.pdf">Github Link</a></h2>
+									</header>
+<!--									<h3>Create a static website using AWS S3 and explain in great technical detail what you did.</h3>-->
+<!--									<p>You need to have the AWS CLI already installed (this is explained in the previous homework).<br>-->
+<!--										1. Create a bucket <br><br>-->
+<!--										aws s3api create-bucket &#45;&#45;bucket <nameofsubdomain.domain.com> &#45;&#45;region us-east-1 <br><br>-->
+<!--											This creates a new S3 bucket. (you must already have your AWS Access Key ID created and authorized). For the bucket name it must be something unique, otherwise it would create a conflict with other buckets (naming rules). Then the region must be specified, in this case we’ll use the us-east-1.<br><br>-->
+<!--											2. We need to have a bucket_policy.json file in order to grant public read access to the bucket, this way anyone in the internet who reaches your bucket will be able to do so; this file needs to have the following parameters:<br>-->
+<!--									<ul>-->
+<!--										<li>The Version date you need.</li>-->
+<!--										<li>Sid: es el statment id (esto da el permiso).</li>-->
+<!--										<li>Effect: en allow o deny.</li>-->
+<!--										<li>Principal: que por el * significa que es todos los users.</li>-->
+<!--										<li>Action: s3:GetObject (para que agarre nuestro objeto)</li>-->
+<!--										<li>Resource: (el recurso, bucket name)</li>-->
+<!--									</ul>-->
+<!--									{"Version": "2012-10-17",-->
+<!--									"Statement": [-->
+<!--									{-->
+<!--									"Sid": "PublicReadGetObject",-->
+<!--									"Effect": "Allow",-->
+<!--									"Principal": "*",-->
+<!--									"Action": "s3:GetObject",-->
+<!--									"Resource": "arn:aws:s3:::<bucket_name>/*"-->
+<!--									}-->
+<!--									]-->
+<!--									}-->
+
+
+<!--									</p>-->
+								</div>
+							</section>
+
+						
+				<!-- Contact -->
+						<section id="contact">
+							<div class="inner">
+								<section>
+									<form method="post" action="#"></form>
+								</section>
+								<section class="split">
+									<section>
+										<div class="contact-method">
+											<span class="icon solid alt fa-envelope"></span>
+											<h3>Email</h3>
+											<a href="#">gabriela.sanchez@cetys.edu.mx</a>
+										</div>
+									</section>
+									<section>
+										<div class="contact-method">
+											<span class="icon solid alt fa-phone"></span>
+											<h3>Phone</h3>
+											<span>+52 (844) 120 7267</span>
+										</div>
+									</section>
+									<section>
+										<div class="contact-method">
+											<span class="icon solid alt fa-home"></span>
+											<h3>Address</h3>
+											<span>Top secret<br />
+										Tijuana, B.C.
+										</span>
+										</div>
+									</section>
+								</section>
+							</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
