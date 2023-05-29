@@ -4,13 +4,13 @@
 /// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 ///
 
-/* Menu */
+/*  */
 
-	#menu {
+	# {
 		@include vendor('transition', (
-			'transform #{_duration(menu)} ease',
-			'opacity #{_duration(menu)} ease',
-			'visibility #{_duration(menu)}'
+			'transform #{_duration()} ease',
+			'opacity #{_duration()} ease',
+			'visibility #{_duration()}'
 		));
 		@include vendor('align-items', 'center');
 		@include vendor('display', 'flex');
@@ -31,9 +31,9 @@
 
 		.inner {
 			@include vendor('transition', (
-				'transform #{_duration(menu)} ease-out',
-				'opacity #{_duration(menu)} ease',
-				'visibility #{_duration(menu)}'
+				'transform #{_duration()} ease-out',
+				'opacity #{_duration()} ease',
+				'visibility #{_duration()}'
 			));
 			@include vendor('transform', 'rotateX(20deg)');
 			-webkit-overflow-scrolling: touch;
@@ -140,17 +140,17 @@
 	}
 
 	body.is-ie {
-		#menu {
+		# {
 			background: transparentize(_palette(bg-alt), 0.025);
 		}
 	}
 
-	body.is-menu-visible {
+	body.is--visible {
 		#wrapper {
 			@include vendor('filter', 'blur(0.5em)');
 		}
 
-		#menu {
+		# {
 			@include vendor('pointer-events', 'auto');
 			opacity: 1;
 			visibility: visible;
