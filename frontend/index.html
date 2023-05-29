@@ -12,6 +12,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="assets/js/user_info.js"></script>
 
 	</head>
 	<body class="is-preload">
@@ -22,20 +24,35 @@
 				<!-- Header -->
 					<header id="header" class="alt">
 						<a href="index.html" class="logo"><strong>V</strong> <span> room </span></a>
-						<nav><a  href="#menu" class="material-symbols-outlined" style="font-size: 30px;"> account_circle </a>
-
-<!--							<a href="#menu">Account</a>-->
-						</nav>
+						<!-- <nav><a  href="#menu"></a>
+							<div class="account-dropdown">
+								<button class="account-button">
+								  <span class="account-name"><span id="username"></span>
+								  <i class="fas fa-caret-down"></i>
+								</button>
+								<div class="account-menu">
+								  <ul>
+									<li><span id="email"></span></li>
+									<li><a href="#">Logout</a></li>
+								  </ul>
+								</div>
+							  </div>
+							  <script>
+								$(document).ready(function() {
+								  $('.account-button').click(function() {
+									$('.account-menu').toggle();
+								  });
+								});
+							  </script>
+						</nav> -->
 					</header>
 
 				<!-- Menu -->
-					<nav id="menu">
+					<!-- <nav id="menu">
 						<ul class="links">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="landing.html">Account</a></li>
 							<li><a href="elements.html">Log Out</a></li>
 						</ul>
-					</nav>
+					</nav> -->
 
 				<!-- Banner -->
 					<section id="banner" class="major">
@@ -66,7 +83,7 @@
 										<img src="https://cloudfront-eu-central-1.images.arcpublishing.com/prisa/BAVO3S6B5NN4BINXHCOBVN4MTA.jpg" alt="" />
 									</span>
 									<header class="major">
-										<h3><a href="examen.html" class="link">VideoChat</a></h3>
+										<h3><a href="rooms.html" class="link">VideoChat</a></h3>
 										<p>Here you can videochat with the people inside this VROOM, as well as exchanging
 										message through our chat</p>
 									</header>
@@ -77,22 +94,10 @@
 										<img src="https://media.wired.com/photos/62feb60bcea7c0581e825cb0/master/w_2560%2Cc_limit/Fate-of-Game-Preservation-Games-GettyImages-1170073827.jpg" alt="" />
 									</span>
 									<header class="major">
-										<h3><a href="assigment_1.html" class="link">VideoGames</a></h3>
+										<h3><a href="games.html" class="link">VideoGames</a></h3>
 										<p>Here you can see some of the available video games to play</p>
 									</header>
 								</article>
-
-<!--							Assigment 2-->
-<!--								<article>-->
-<!--									<span class="image">-->
-<!--										<img src="https://i.pinimg.com/564x/c7/ed/cd/c7edcd008c22f0642cd48608575b6de7.jpg" alt="" />-->
-<!--									</span>-->
-<!--									<header class="major">-->
-<!--										<h3><a href="assigment_2.html" class="link">ChatCGPT</a></h3>-->
-<!--										<p>Create a Static Website, link a website to your cetystijuana.com subdomain, <br>-->
-<!--										create an entry to a table in DynamoDB</p>-->
-<!--									</header>-->
-<!--								</article>-->
 
 							</section>
 					</div>
